@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="142dp"
+    android:padding="24dp"
+    android:background="@drawable/bg_f3f3f5">
+
+    <TextView
+        android:id="@+id/tv_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* "
+        android:textColor="@color/red_FF4C60"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tv_x"
+        android:text="1.配送车辆、盛装容器是否清洁消毒？"
+        android:textColor="@color/black_3E404E"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_x"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <RadioButton
+            android:id="@+id/rb_check_yes"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:text="是"
+            android:textColor="@color/black_3E404E"
+            android:textSize="26sp" />
+
+        <RadioButton
+            android:id="@+id/rb_check_not"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:text="否"
+            android:textColor="@color/black_3E404E"
+            android:textSize="26sp" />
+    </RadioGroup>
+
+</RelativeLayout>
